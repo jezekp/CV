@@ -1,0 +1,143 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[green]{classic}                  % optional argument are 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage{natbib}
+\usepackage{hyperref}
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+
+% Hyperlinks
+\usepackage{hyperref}								% to use hyperlinks
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}			% hyperlinks setup
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+% personal data
+\firstname{Petr}
+\familyname{Je\v{z}ek}
+%\title{Resumé title (optional)}               % optional, remove the line if not wanted
+\address{Borsk\'{a} 53a}{301 00, Plze\v{n}, Czech Republic}    % optional, remove the line if not wanted
+%\mobile{+30 698 4385057}                    % optional, remove the line if not wanted
+\phone{+420 723 123 877}                      % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{jezekp@kiv.zcu.cz}                      % optional, remove the line if not wanted
+%\email{\href{mailto:s.dakourou@gmail.com}{s.dakourou@gmail.com}}                      % optional, remove the line if not wanted
+\homepage{cz.linkedin.com/in/jezekp}%{LinkedIn Profile}}                % optional, remove the line if not wanted
+%\extrainfo{additional information (optional)} % optional, remove the line if not wanted
+\photo[64pt][0.4pt]{picture}                         % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{Some quote (optional)}                 % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+
+\section{Education}
+%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
+\cventry{September 2012}{Ph.D. in Computer Science and Engineering}{University of West Bohemia in Pilsen,
+Department of Computer Science and Engineering
+}{}{}{4 years (Ph. D.)}
+\cventry{June 2009}{Master's degree in Software Engineering}{University of West Bohemia in Pilsen,
+Department of Computer Science and Engineering}{}{}{2 years (Ing.)}
+\cventry{Sep~2007-Feb~2008}{Erasmus Student Internship}{Universidad de Las Palmas de Gran Canaria }{}{}{}
+\cventry{June 2006}{Bachelors's degree in Software Engineering}{University of West Bohemia in Pilsen
+Department of Computer Science and Engineering}{}{}{3 years (Bc.)}
+
+\section{Work Experience}
+
+\cventry{Dec 2009 - June 2012}{Software Developer}{Nakladatelství Fraus}{Pilsen}{}{Software development on Microsoft Windows Platform (.NET), Web portals for schools.
+\newline{Participation in projects: \textbf{Partnerská škola} - \hyperref[partnerska-skola]{''http://www.partnerska-skola.cz''}, \textbf{flexilearn} - \hyperref[flexilearn]{''http://flexilearn.cz''}}
+\newline\textit{Technologies: WCF, ASP.NET, Web Services}
+}
+
+\cventry{May 2009 - Oct 2009}{Software Developer}{Eurosoftware, spol. s r. o., }{Pilsen}{}{Java Platform, IT-solutions for the international retail trade.\newline
+\textit{Technologies: Java, Groovy, Xpath, Swing, Firebird}
+}
+
+\cventry{July 2008 - March 2009}{Software Developer}{Inter-Informatics, spol. s r. o.}{Prague}{}{Java Platform, Made-To-Order software (Document management system, Clearing center for Fujitsu-Siemens computers.)
+\newline\textit{Technologies: Java EE, JBoss, Hibernate, EJB, Seam, Postgress, Oracle}
+}
+
+\cventry{Sep 2005 - July 2008}{Software Developer}{Pears Health Cyber, s. r. o. }{Prague}{}{Java Platform, e-marketing in the pharma and healthcare sector.
+\newline{Participation in development of an engine for eDetailing campaigns (tens localizations in tens waves).}
+\newline{Participation in projects: \textbf{Virtuální ordinace} - \hyperref[virtualni-ordinace]{''http://www.ordinace.cz''}}
+\newline\textit{Technologies: Java EE, Tomcat, Oracle}
+}
+
+\section{Doctoral Thesis}
+\cvline{Title}{\emph{Ontology Development in EEG/ERP Domain}}
+\cvline{Supervisors}{prof. Václav Matoušek}
+\cvline{Description}{\small Development an ontology that describes domain of EEG/ERP experiments. The ontology is expressed by Semantic Web technologies (OWL, RDF). The ontology is generated from common object oriented code. Specific mapping is proposed and implemented.}
+
+\section{Master Thesis}
+\cvline{Title}{\emph{The Design of the System for EEG Data Processing}}
+\cvline{Supervisors}{Roman Mouček, PhD.}
+\cvline{Description}{\small The first proposal of the system for storing of EEG/ERP experimental data and metadata.}
+
+\section{Bachelor Thesis}
+\cvline{Title}{\emph{The Database Support for EEG Data Processing}}
+\cvline{Supervisors}{Roman Mouček, PhD.}
+\cvline{Description}{\small The system for storing of EEG experiments performed in faculty hospital in Pilsen.}
+
+\section{Awards}
+\cvline{Bachelor's Thesis}{Awarded by CCA group as the thesis of the year ($1^{st}$ place).}
+\cvline{Master's Thesis}{Awarded by IBA.CZ group in the national competition ($4^{th}$ place).}
+
+\section{Languages}
+\cvlanguage{Czech}{Native}{}
+\cvlanguage{English}{Good}{}
+\cvlanguage{Spanish}{Basic}{}
+
+\section{Teaching Experiences}
+
+\cvline{2008 - 2009}{Basic of Computer Networks}
+\cvline{2009}{Introduction Into User Interface in Java}
+\cvline{2008 - 2012}{Supervising of several students' seminar works or Masters and Bachelors Thesis}
+
+\section{Work on Projects}
+\cvline{ME 949}{\textit{Ministry of Education, Youth and Sports} - Analysis of negative impacts on driver
+attention (2007 – 2011)}
+\cvline{102/07/1191}{\textit{Grant Agency of the Czech Republic} - Analysis of driver observation area and
+reaction time changes in relation to attention degeneration (2007 – 2010)}
+\cvline{2C06009}{ \textit{Ministry of Education, Youth and Sports} - Complex Knowledge Base Tools for
+Natural Language Communication with the Semantic Web (COT-SEWing) (2006 – 2010)}
+\cvline{SGS-2010-038}{\textit{UWB Grant} - Methods and Applications of Bio- and Medical Informatics (2010-2012)}
+\cvline{NTIS}{\textit{Project "NTIS - New Technologies for Information Society"}, European Centre of Excellence, CZ.1.05/1.1.00/02.0090.}
+
+\section{Fields of Interests}
+
+\cvline{}{Building of EEG/ERP infrastructure (data/metadata description, storing, interchanging and management of experiments, signal processing methods etc.).}
+\cvline{}{Semantic Web Technologies (expression of data/metadata using domain ontologies, mapping of OOP to OWL).}
+\cvline{}{Management of Big Data, Cloud Computing, Social Networks, programming of Web and Mobile devices.}
+
+\section{Computer Skills}
+\cvline{Programming}{\small UML, HTML, CSS, PHP, JavaScript Java (Java EE, Java SE, Spring, Hibernate), .NET (ASP.NET, WCF), Web Services}
+\cvline{Databases}{\small Oracle, FireBird, PostgreSQL, MSSQL}
+\cvline{OS}{\small Windows, Linux}
+\cvline{Office}{\small MS Office, OpenOffice}
+
+\nocite{DBLP:conf/iceis/JezekM11, Jezek10, DBLP:conf/biostec/JezekM12, DBLP:conf/biostec/JezekM10, DBLP:conf/biostec/MoucekJP11, DBLP:conf/ic3k/MoucekJJP11, Overview-of-neuroinformatics-infrastructure-in-Pilsen, DBLP:conf/biostec/JezekM11, DBLP:conf/bmei/JezekM11, MoucekJ10, EEG-ERP-portal-Extending-object-oriented-code-for-the-missing-semantics-using-Java-annotations, EEG-ERP-experiments-data-and-metadata-structures, Database-for-EEG-ERP-Experiments, System-for-storage-EEG/ERP-data-and-metadata, Deriving-Semantic-web-structures-from-EEG-ERP-data-source, Semantic-Web-in-EEG-ERP-Portal, NNW, DBLP:conf/biostec/JezekM13, 10.3389/conf.fninf.2013.09.00046, conf/vl/JezekMFWG13}
+
+
+
+\end{document} 

@@ -1,3 +1,4 @@
+\PassOptionsToPackage{pdfpagelabels=false}{hyperref} 
 \documentclass[11pt,a4paper]{moderncv}
 
 % moderncv themes
@@ -7,7 +8,6 @@
 % character encoding
 \usepackage[utf8]{inputenc}                   % replace by the encoding you are using
 \usepackage{natbib}
-\usepackage{hyperref}
 % adjust the page margins
 \usepackage[scale=0.8]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
@@ -16,15 +16,16 @@
 
 
 % Hyperlinks
-\usepackage{hyperref}								% to use hyperlinks
+%\usepackage{hyperref}								% to use hyperlinks
+\AtBeginDocument{\recomputelengths}
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}			% hyperlinks setup
-\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+\AfterPreamble{\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}}
 
 % personal data
 \firstname{Petr}
 \familyname{Je\v{z}ek}
 %\title{Resumé title (optional)}               % optional, remove the line if not wanted
-\address{Borsk\'{a} 53a}{301 00, Plze\v{n}, Czech Republic}    % optional, remove the line if not wanted
+\address{Bylinkov\'{a} 416/15}{301 00, Plze\v{n}, Czech Republic}    % optional, remove the line if not wanted
 %\mobile{+30 698 4385057}                    % optional, remove the line if not wanted
 \phone{+420 723 123 877}                      % optional, remove the line if not wanted
 %\fax{fax (optional)}                          % optional, remove the line if not wanted
@@ -64,6 +65,11 @@ Department of Computer Science and Engineering}{}{}{2 years (Ing.)}
 Department of Computer Science and Engineering}{}{}{3 years (Bc.)}
 
 \section{Work Experience}
+
+\cventry{Juli 2012 - present}{Junior Researcher}{NTIS Research Center, University of West Bohemia}{Pilsen}{}{Research field: Electroencephalograpy. Responsibilities for developmnent of software infrastructure.
+\newline{Participation in projects: \textbf{EEG/ERP Portal} - \hyperref[EEG/ERP Portal]{''http://eegdatabase.kiv.zcu.cz''}, \textbf{Google Summer of Code} mentor (years: 2014-2015) }
+\newline\textit{Technologies: Java EE, Hibernate, Spring, RESTful web services, Android}
+}
 
 \cventry{Dec 2009 - June 2012}{Software Developer}{Nakladatelství Fraus}{Pilsen}{}{Software development on Microsoft Windows Platform (.NET), Web portals for schools.
 \newline{Participation in projects: \textbf{Partnerská škola} - \hyperref[partnerska-skola]{''http://www.partnerska-skola.cz''}, \textbf{flexilearn} - \hyperref[flexilearn]{''http://flexilearn.cz''}}

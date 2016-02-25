@@ -1,6 +1,10 @@
 \PassOptionsToPackage{pdfpagelabels=false}{hyperref} 
 \documentclass[11pt,a4paper]{moderncv}
 
+\usepackage{usebib}
+
+\makeatother
+
 % moderncv themes
 \moderncvtheme[green]{classic}                  % optional argument are 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
 %\moderncvtheme[green]{classic}                % idem
@@ -66,8 +70,8 @@ Department of Computer Science and Engineering}{}{}{3 years (Bc.)}
 
 \section{Work Experience}
 
-\cventry{Juli 2012 - present}{Junior Researcher}{NTIS Research Center, University of West Bohemia}{Pilsen}{}{Research field: Electroencephalograpy. Responsibilities for developmnent of software infrastructure.
-\newline{Participation in projects: \textbf{EEG/ERP Portal} - \hyperref[EEG/ERP Portal]{''http://eegdatabase.kiv.zcu.cz''}, \textbf{Google Summer of Code} mentor (years: 2014-2015) }
+\cventry{July 2012 - present}{Junior Researcher}{NTIS Research Center, University of West Bohemia}{Pilsen}{}{Research field: Electroencephalograpy. Responsibilities for developmnent of software infrastructure.
+\newline{Participation in projects: \textbf{EEG/ERP Portal} - \hyperref[EEG/ERP Portal]{''http://eegdatabase.kiv.zcu.cz''}, \textbf{Google Summer of Code} mentor (years: 2014-2016) }
 \newline\textit{Technologies: Java EE, Hibernate, Spring, RESTful web services, Android}
 }
 
@@ -142,11 +146,14 @@ Natural Language Communication with the Semantic Web (COT-SEWing) (2006 – 2010
 \cvline{OS}{\small Windows, Linux}
 \cvline{Office}{\small MS Office, OpenOffice}
 
-\nocite{DBLP:conf/iceis/JezekM11, Jezek10, DBLP:conf/biostec/JezekM12, DBLP:conf/biostec/JezekM10, DBLP:conf/biostec/MoucekJP11, DBLP:conf/ic3k/MoucekJJP11, Overview-of-neuroinformatics-infrastructure-in-Pilsen, DBLP:conf/biostec/JezekM11, DBLP:conf/bmei/JezekM11, MoucekJ10, EEG-ERP-portal-Extending-object-oriented-code-for-the-missing-semantics-using-Java-annotations, EEG-ERP-experiments-data-and-metadata-structures, Database-for-EEG-ERP-Experiments, System-for-storage-EEG/ERP-data-and-metadata, Deriving-Semantic-web-structures-from-EEG-ERP-data-source, Semantic-Web-in-EEG-ERP-Portal, NNW, DBLP:conf/biostec/JezekM13, 10.3389/conf.fninf.2013.09.00046, conf/vl/JezekMFWG13}
+
+\nocite{*}
 
 
 
 \bibliographystyle{chicago}
 \bibliography{publications}
+
+
 
 \end{document} 

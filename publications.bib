@@ -106,7 +106,7 @@
   title     = {Software Infrastructure for EEG/ERP Research},
   year      = {2011},
   pages     = {478-481},
-  crossref  = {DBLP:conf/ic3k/2011keod},
+  crossref  = {DBLP:conf/ic3k/2011keo}d,
   bibsource = {DBLP, http://dblp.uni-trier.de}
 }
 @proceedings{DBLP:conf/ic3k/2011keod,
@@ -351,7 +351,7 @@ JOURNAL={Frontiers in Neuroinformatics},
 
 VOLUME={},
 
-YEAR={},
+YEAR={2013},
 
 NUMBER={46},
 
@@ -382,3 +382,76 @@ ABSTRACT={We deal with collecting experimental data from Electroencephalography 
   url = {http://dblp.uni-trier.de/db/conf/vl/vlhcc2013.html#JezekMFWG13},
   year = 2013
 }
+%----
+@INPROCEEDINGS{6513021, 
+author={P. Ježek and R. Mouček}, 
+booktitle={Biomedical Engineering and Informatics (BMEI), 2012 5th International Conference on}, 
+title={Ontology development in EEG/ERP Portal}, 
+year={2012}, 
+pages={1280-1284}, 
+keywords={electroencephalography;knowledge representation languages;medical computing;meta data;ontologies (artificial intelligence);portals;semantic Web;EEG portal;ERP portal;OWL;metadata;object-oriented code;ontology development;scientific community;semantic Web languages;EEG/ERP Portal;EEG/ERP experiment;Semantic Framework;Semantic Web;data management;electroencephalography;event-related potentials;neuroinformatics;ontology}, 
+doi={10.1109/BMEI.2012.6513021}, 
+month={Oct},}
+
+@inproceedings{jezek2013model,
+  title={Model of Software and Hardware Infrastructure for Electrophysiology.},
+  author={Jezek, Petr and Stebet{\'a}k, Jan and Bruha, Petr and Moucek, Roman and Stacey, D and Sol{\'e}-Casals, J and Fred, ALN and Gamboa, H},
+  booktitle={HEALTHINF},
+  pages={352--356},
+  year={2013}
+}
+
+@INPROCEEDINGS{6645264, 
+author={P. Ježek and R. Mouček and Y. Le Franc and T. Wachtler and J. Grewe}, 
+booktitle={Visual Languages and Human-Centric Computing (VL/HCC), 2013 IEEE Symposium on}, 
+title={Framework for automatic generation of graphical layout compatible with multiple platforms}, 
+year={2013}, 
+pages={193-194}, 
+keywords={Internet;meta data;software engineering;user interfaces;Web-based user interface;automatic generation;data management systems;generated Web-based layouts;graphical layout;metadata;mobile devices;model-driven approach;neuroscience experiments;unique database structure;Data models;Java;Layout;Servers;Visual databases;XML}, 
+doi={10.1109/VLHCC.2013.6645264}, 
+ISSN={1943-6092}, 
+month={Sept},}
+
+@ARTICLE{10.3389/fninf.2014.00020,
+  
+ AUTHOR={Moucek, Roman  and  Bruha, Petr  and  Jezek, Petr  and  Mautner, Pavel  and  Novotny, Jiri  and  Papez, Vaclav  and  Prokop, Tomáš  and  Rondík, Tomáš  and  Štebeták, Jan  and  Vareka, Lukas},   
+	 
+TITLE={Software and Hardware Infrastructure for Research in Electrophysiology},      
+	
+JOURNAL={Frontiers in Neuroinformatics},      
+	
+VOLUME={8},      
+	
+YEAR={2014},      
+	
+NUMBER={20},     
+	  
+URL={http://www.frontiersin.org/neuroinformatics/10.3389/fninf.2014.00020/abstract},       
+	
+DOI={10.3389/fninf.2014.00020},      
+	
+ISSN={1662-5196} ,      
+	
+ABSTRACT={As in other areas of experimental science, operation of electrophysiological laboratory, design and performance of electrophysiological experiments, collection, storage and sharing of experimental data and metadata, analysis and interpretation of these data, and publication of results are time consuming activities. If these activities are well organized and supported by a suitable infrastructure, work efficiency of researchers increases significantly. This article deals with the main concepts, design, and development of software and hardware infrastructure for research in electrophysiology. The described infrastructure has been primarily developed for the needs of neuroinformatics laboratory at the University of West Bohemia, the Czech Republic. However, from the beginning it has been also designed and developed to be open and applicable in laboratories that do similar research. After introducing the laboratory and the whole architectural concept the individual parts of the infrastructure are described. The central element of the software infrastructure is a web-based portal that enables community researchers to store, share, download and search data and metadata from electrophysiological experiments. The data model, domain ontology and usage of semantic web languages and technologies are described. Current data publication policy used in the portal is briefly introduced. The registration of the portal within Neuroscience Information Framework is described. Then the methods used for processing of electrophysiological signals are presented. The specific modifications of these methods introduced by laboratory researches are summarized; the methods are organized into a laboratory workflow. Other parts of the software infrastructure include mobile and offline solutions for data/metadata storing and a hardware stimulator communicating with an EEG amplifier and recording software.}}
+
+@ARTICLE{10.3389/fninf.2015.00003,
+  
+ AUTHOR={Jezek, Petr  and  Moucek, Roman},   
+	 
+TITLE={Semantic Framework for Mapping Object-Oriented Model to Semantic Web Languages},      
+	
+JOURNAL={Frontiers in Neuroinformatics},      
+	
+VOLUME={9},      
+	
+YEAR={2015},      
+	
+NUMBER={3},     
+	  
+URL={http://www.frontiersin.org/neuroinformatics/10.3389/fninf.2015.00003/abstract},       
+	
+DOI={10.3389/fninf.2015.00003},      
+	
+ISSN={1662-5196} ,      
+	
+ABSTRACT={The article deals with and discusses two main approaches in building semantic structures for electrophysiological metadata. It is the use of conventional data structures, repositories, and programming languages on one hand and the use of formal representations of ontologies, known from knowledge representation, such as description logics or semantic web languages on the other hand. Although knowledge engineering offers languages supporting richer semantic means of expression and technological advanced approaches, conventional data structures and repositories are still popular among developers, administrators and users because of their simplicity, overall intelligibility, and lower demands on technical equipment. The choice of conventional data resources and repositories, however, raises the question of how and where to add semantics that cannot be naturally expressed using them. As one of the possible solutions, this semantics can be added into the structures of the programming language that accesses and processes the underlying data. To support this idea we introduced a software prototype that enables its users to add semantically richer expressions into a Java object-oriented code. This approach does not burden users with additional demands on programming environment since reflective Java annotations were used as an entry for these expressions. Moreover, additional semantics need not to be written by the programmer directly to the code, but it can be collected from non-programmers using a graphic user interface. The mapping that allows the transformation of the semantically enriched Java code into the Semantic Web language OWL was proposed and implemented in a library named the Semantic Framework. This approach was validated by the integration of the Semantic Framework in the EEG/ERP Portal and by the subsequent registration of the EEG/ERP Portal in the Neuroscience Information Framework.}}
